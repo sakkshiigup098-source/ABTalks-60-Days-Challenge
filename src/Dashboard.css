@@ -1,0 +1,330 @@
+.dashboard {
+    min-height: 100vh;
+    background: #f5f5f0;
+    color: #111;
+    padding: 30px 6% 100px;
+  }
+  
+  .dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .eyebrow {
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: #777;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+  
+  .dashboard-header h1 {
+    font-size: 30px;
+    letter-spacing: -1px;
+  }
+  
+  .avatar {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: #111;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+  }
+  
+  /* STREAK */
+  
+  .streak-card {
+    background: #111;
+    color: white;
+    border-radius: 20px;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .streak-label {
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: #888;
+  }
+  
+  .streak-card h2 {
+    font-size: 32px;
+    margin: 8px 0;
+  }
+  
+  .streak-card p {
+    color: #aaa;
+    font-size: 13px;
+  }
+  
+  .streak-circle {
+    width: 70px;
+    height: 70px;
+    border: 4px solid #555;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+  }
+  
+  /* TODAY */
+  
+  .today-section,
+  .progress-section,
+  .achievements,
+  .standing {
+    margin-top: 45px;
+  }
+  
+  .section-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .section-top h2 {
+    font-size: 25px;
+  }
+  
+  .difficulty {
+    font-size: 10px;
+    padding: 7px 10px;
+    background: #e5e5df;
+    border-radius: 20px;
+  }
+  
+  .task-card {
+    margin-top: 18px;
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+  }
+  
+  .task-icon {
+    display: block;
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  
+  .task-card h3 {
+    font-size: 23px;
+    margin-bottom: 10px;
+  }
+  
+  .task-card p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  .task-info {
+    display: flex;
+    gap: 15px;
+    margin: 20px 0;
+    color: #777;
+    font-size: 12px;
+  }
+  
+  .dashboard-button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 25px;
+    background: #111;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  /* PROGRESS */
+  
+  .progress-section span {
+    font-size: 12px;
+    color: #777;
+  }
+  
+  .progress-bar {
+    height: 9px;
+    background: #ddd;
+    border-radius: 10px;
+    margin-top: 18px;
+    overflow: hidden;
+  }
+  
+  .progress-fill {
+    width: 18%;
+    height: 100%;
+    background: #111;
+    border-radius: 10px;
+  }
+  
+  /* ACHIEVEMENTS */
+  
+  .achievement-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 15px;
+  }
+  
+  .achievement {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .achievement span {
+    display: block;
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  
+  .achievement strong {
+    display: block;
+    font-size: 12px;
+  }
+  
+  .achievement small {
+    color: #888;
+    font-size: 10px;
+  }
+  
+  .locked {
+    opacity: 0.45;
+  }
+  
+  /* STANDING */
+  
+  .standing-card {
+    margin-top: 15px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 18px;
+    padding: 22px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+  }
+  
+  .standing-card small {
+    display: block;
+    color: #888;
+    font-size: 9px;
+    margin-bottom: 7px;
+  }
+  
+  .standing-card strong {
+    font-size: 20px;
+  }
+  
+  /* AI COACH */
+  
+  .coach {
+    margin-top: 45px;
+    background: #e8e8e2;
+    padding: 25px;
+    border-radius: 20px;
+  }
+  
+  .coach > span {
+    font-size: 10px;
+    letter-spacing: 2px;
+    font-weight: bold;
+  }
+  
+  .coach h2 {
+    font-size: 24px;
+    margin: 15px 0;
+    line-height: 1.1;
+  }
+  
+  .coach p {
+    color: #666;
+    font-size: 13px;
+    line-height: 1.5;
+  }
+  
+  /* BOTTOM NAV */
+  
+  .bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    background: white;
+    border-top: 1px solid #ddd;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .bottom-nav a {
+    text-decoration: none;
+    color: #777;
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  .bottom-nav a span {
+    display: block;
+    font-size: 9px;
+    margin-top: 3px;
+  }
+  
+  .bottom-nav .active {
+    color: #111;
+  }
+  
+  /* MOBILE */
+  
+  @media (min-width: 700px) {
+    .dashboard {
+      max-width: 900px;
+      margin: auto;
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .dashboard {
+      padding-left: 18px;
+      padding-right: 18px;
+    }
+  
+    .dashboard-header h1 {
+      font-size: 26px;
+    }
+  
+    .streak-card h2 {
+      font-size: 28px;
+    }
+  
+    .achievement-grid {
+      gap: 6px;
+    }
+  
+    .achievement {
+      padding: 10px 5px;
+    }
+  
+    .standing-card strong {
+      font-size: 17px;
+    }
+  }
+  .coach {
+    cursor: pointer;
+  }
+  
+  

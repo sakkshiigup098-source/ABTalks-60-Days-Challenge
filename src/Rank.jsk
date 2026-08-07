@@ -1,0 +1,105 @@
+import "./Rank.css";
+
+function Rank() {
+  return (
+    <main className="rank">
+
+      <header className="rank-header">
+
+        <button
+          className="back-button"
+          onClick={() => window.location.href="/dashboard"}
+        >
+          ←
+        </button>
+
+        <div>
+          <p>LEADERBOARD</p>
+          <h1>Your Rank</h1>
+        </div>
+
+      </header>
+
+
+      <section className="my-rank">
+
+        <span>YOUR CURRENT POSITION</span>
+
+        <h2>#45</h2>
+
+        <p>
+          You are in the top 9% of all builders.
+        </p>
+
+      </section>
+
+
+      <section className="leaderboard">
+
+        <p className="section-label">
+          TOP BUILDERS
+        </p>
+
+
+        <div className="rank-card top">
+          <span>🥇</span>
+
+          <div>
+            <strong>Aarav</strong>
+            <small>42 Day Streak</small>
+          </div>
+
+          <b>#1</b>
+        </div>
+
+
+        <div className="rank-card">
+
+          <span>🥈</span>
+
+          <div>
+            <strong>Riya</strong>
+            <small>35 Day Streak</small>
+          </div>
+
+          <b>#2</b>
+
+        </div>
+
+
+        <div className="rank-card">
+
+          <span>🥉</span>
+
+          <div>
+            <strong>Karan</strong>
+            <small>31 Day Streak</small>
+          </div>
+
+          <b>#3</b>
+
+        </div>
+
+
+        <div className="rank-card user">
+
+          <span>🔥</span>
+
+          <div>
+            <strong>You</strong>
+            <small>11 Day Streak</small>
+          </div>
+
+          <b>#45</b>
+
+        </div>
+
+
+      </section>
+
+
+    </main>
+  );
+}
+
+export default Rank;

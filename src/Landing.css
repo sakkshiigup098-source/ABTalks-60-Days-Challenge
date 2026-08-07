@@ -1,0 +1,91 @@
+.landing {
+    min-height: 100vh;
+    background: #f5f5f0;
+    color: #111;
+    padding: 25px 20px 40px;
+  }
+  
+  .landing-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .landing-header h1 {
+    font-size: 28px;
+  }
+  
+  .landing-header span {
+    font-size: 12px;
+    color: #777;
+  }
+  
+  .hero {
+    margin-top: 50px;
+  }
+  
+  .hero h2 {
+    font-size: 38px;
+    line-height: 1.1;
+    letter-spacing: -1px;
+  }
+  
+  .hero p {
+    margin-top: 20px;
+    color: #666;
+    line-height: 1.6;
+    font-size: 15px;
+  }
+  
+  .hero button {
+    margin-top: 30px;
+    width: 100%;
+    padding: 16px;
+    border: none;
+    border-radius: 30px;
+    background: #111;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .stats {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+  }
+  
+  .stats div {
+    background: white;
+    border-radius: 18px;
+    padding: 20px 10px;
+    text-align: center;
+  }
+  
+  .stats strong {
+    display: block;
+    font-size: 24px;
+  }
+  
+  .stats span {
+    font-size: 11px;
+    color: #777;
+  }
+  
+  .tracks {
+    margin-top: 50px;
+  }
+  
+  .tracks h2 {
+    font-size: 24px;
+  }
+  
+  .track-card {
+    background: white;
+    margin-top: 15px;
+    padding: 20px;
+    border-radius: 18px;
+    border: 1px solid #ddd;
+    font-weight: bold;
+  }

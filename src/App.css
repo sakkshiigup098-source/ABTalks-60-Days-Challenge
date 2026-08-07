@@ -1,0 +1,365 @@
+/* =========================
+   GLOBAL
+========================= */
+
+* {
+  box-sizing: border-box;
+}
+
+main {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+button {
+  font-family: inherit;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+  height: 70px;
+  padding: 0 6%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.logo span {
+  font-weight: 400;
+}
+
+.login-btn {
+  border: 1px solid #111;
+  background: white;
+  color: #111;
+  padding: 9px 18px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+  min-height: 650px;
+  padding: 80px 7% 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #111;
+  color: white;
+}
+
+.badge {
+  width: fit-content;
+  padding: 8px 13px;
+  border: 1px solid #444;
+  border-radius: 30px;
+  font-size: 11px;
+  letter-spacing: 1px;
+  color: #bbb;
+  margin-bottom: 25px;
+}
+
+.hero h1 {
+  font-size: clamp(52px, 15vw, 86px);
+  line-height: 0.92;
+  letter-spacing: -4px;
+  margin: 0;
+}
+
+.hero h1 span {
+  color: #888;
+}
+
+.hero-description {
+  max-width: 550px;
+  margin-top: 30px;
+  color: #aaa;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.start-btn {
+  width: fit-content;
+  margin-top: 30px;
+  padding: 16px 24px;
+  border: none;
+  border-radius: 30px;
+  background: white;
+  color: #111;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.start-btn:hover {
+  transform: translateY(-3px);
+}
+
+.small-text {
+  margin-top: 15px;
+  color: #666;
+  font-size: 12px;
+}
+
+
+/* =========================
+   STATS
+========================= */
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background: #f4f4f0;
+  border-bottom: 1px solid #ddd;
+}
+
+.stats div {
+  padding: 30px 10px;
+  text-align: center;
+  border-right: 1px solid #ddd;
+}
+
+.stats div:last-child {
+  border-right: none;
+}
+
+.stats strong {
+  display: block;
+  font-size: 32px;
+}
+
+.stats span {
+  display: block;
+  margin-top: 5px;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  color: #777;
+}
+
+
+/* =========================
+   HOW IT WORKS
+========================= */
+
+.how {
+  padding: 90px 7%;
+  background: white;
+}
+
+.section-label {
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: #888;
+  font-weight: 700;
+}
+
+.how h2 {
+  margin: 15px 0 50px;
+  font-size: 48px;
+  line-height: 1;
+  letter-spacing: -2px;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.step {
+  padding: 25px;
+  border: 1px solid #ddd;
+  border-radius: 16px;
+  min-height: 230px;
+}
+
+.step-number {
+  font-size: 12px;
+  color: #999;
+  margin-bottom: 60px;
+}
+
+.step h3 {
+  font-size: 21px;
+  margin-bottom: 10px;
+}
+
+.step p {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+
+/* =========================
+   TRACKS
+========================= */
+
+.tracks {
+  padding: 90px 7%;
+  background: #f4f4f0;
+}
+
+.tracks h2 {
+  font-size: 48px;
+  letter-spacing: -2px;
+  margin: 15px 0 45px;
+}
+
+.track-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.track-card {
+  background: white;
+  padding: 25px;
+  min-height: 190px;
+  border-radius: 16px;
+  border: 1px solid #ddd;
+  transition: 0.25s;
+}
+
+.track-card:hover {
+  transform: translateY(-5px);
+}
+
+.track-card span {
+  color: #999;
+  font-size: 12px;
+}
+
+.track-card h3 {
+  margin-top: 45px;
+  font-size: 21px;
+}
+
+.track-card p {
+  margin-top: 8px;
+  color: #666;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+
+/* =========================
+   FINAL CTA
+========================= */
+
+.final-cta {
+  padding: 110px 7%;
+  background: #111;
+  color: white;
+  text-align: center;
+}
+
+.final-cta p {
+  color: #777;
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
+.final-cta h2 {
+  margin: 20px 0;
+  font-size: 55px;
+  line-height: 0.95;
+  letter-spacing: -3px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+  padding: 30px 7%;
+  background: #080808;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer p {
+  color: #777;
+  font-size: 12px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+  .navbar {
+    padding: 0 5%;
+  }
+
+  .hero {
+    min-height: 620px;
+    padding: 65px 6%;
+  }
+
+  .hero h1 {
+    font-size: 58px;
+    letter-spacing: -3px;
+  }
+
+  .hero-description {
+    font-size: 15px;
+  }
+
+  .stats strong {
+    font-size: 27px;
+  }
+
+  .steps {
+    grid-template-columns: 1fr;
+  }
+
+  .step {
+    min-height: 190px;
+  }
+
+  .step-number {
+    margin-bottom: 35px;
+  }
+
+  .how h2,
+  .tracks h2 {
+    font-size: 43px;
+  }
+
+  .track-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .final-cta h2 {
+    font-size: 48px;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+}
