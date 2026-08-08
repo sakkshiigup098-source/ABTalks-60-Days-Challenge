@@ -1,4 +1,4 @@
-import "./ChallengeDay.css";
+import "./ChallengeDay.jsx";
 
 function ChallengeDay() {
   return (
